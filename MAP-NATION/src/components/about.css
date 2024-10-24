@@ -1,0 +1,128 @@
+/* AboutUs.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    height: 100%; /* Ensure full page height is used */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Background color for the body */
+    color: #fff;
+}
+
+/* About Us Container */
+.about-us {
+    min-height: 100vh; /* Ensure the container spans at least the full viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Top section with background image */
+.about-header {
+    height: 60vh;
+    background-image: url('/about-us.avif'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.427); /* Dark overlay to improve text readability */
+    padding: 20px;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    color: #e0bb00;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 900px; /* Set a maximum width for the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+/* Team section */
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align team section */
+    padding: 40px;
+    background: linear-gradient(90deg, #1b1b1b 0%, #baa8498f 100%);
+}
+
+/* Team heading */
+.team-heading {
+    font-size: 2rem;
+    color: #e0bb00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Team row */
+.team-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for team members */
+    gap: 30px;
+    width: 100%; /* Full width for each row */
+    margin-bottom: 40px; /* Add margin bottom to create gap between rows */
+}
+
+/* Team member boxes */
+.team-member {
+    background: #222222a9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px; /* Center the image and add spacing */
+}
+
+/* New class for member info */
+.member-info {
+    background: transparent; /* Make the background transparent */
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #e0bb00;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Ensure the content is scrollable if necessary */
+body, .about-us {
+    overflow-y: auto;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    .team-row {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .team-row {
+        grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+}

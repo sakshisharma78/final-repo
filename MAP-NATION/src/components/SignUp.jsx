@@ -44,7 +44,7 @@ function SignUp() {
       errors.password = 'Password is required';
     } else if (
       formData.password.length < 8 || 
-      formData.password.length > 9 || 
+      formData.password.length > 16 || 
       !/[A-Z]/.test(formData.password) || 
       !/_/.test(formData.password)
     ) {

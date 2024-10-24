@@ -1,0 +1,36 @@
+.roadmap-container {
+
+    /* Adjust top margin to shift down and left margin for right shift */
+    padding: 20px;
+    width: 900px;
+    background: linear-gradient(315deg, rgb(0, 0, 0), rgb(138, 136, 136), rgb(206, 164, 14));
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.718);
+    overflow-y: auto;
+    /* Enable vertical scrolling if content overflows */
+    height: 90vh;
+    /* Set max height for the container */
+    margin-top: 5%;
+    width: 800px;
+    
+   
+}
+
+
+.roadmap-title {
+    text-align: center;
+    color: #070707;
+    margin-bottom: 20px;
+}
+
+.roadmap-item {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #444;
+    /* Dark border */
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    background-color: #fff;
+    /* Background color for individual items */
+}

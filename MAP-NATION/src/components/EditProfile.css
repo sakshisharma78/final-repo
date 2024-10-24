@@ -12,6 +12,7 @@
 .content-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 10%;
   padding: 20px;
   border-radius: 20px;
   width: 65%;

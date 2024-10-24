@@ -15,6 +15,7 @@ import Landing from './components/Landing';
 import Login from './components/Login';
 import Register from './components/SignUp';
 import Resume from './components/resume';
+import About from './components/about';
 
 const AppContent = () => {
   const location = useLocation();
@@ -26,7 +27,7 @@ const AppContent = () => {
   };
 
   // Pages that don't need Sidebar, Navbar, and App.css
-  const noSidebarAndNavbar = ['/login', '/register', '/'];
+  const noSidebarAndNavbar = ['/login', '/register', '/','/about'];
 
   // Determine if App.css should be applied
   const appClass = !noSidebarAndNavbar.includes(location.pathname)? 'app-wrapper' : '';
@@ -55,6 +56,7 @@ const AppContent = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/resume/:id" element={<Resume />} />
+          <Route path="/about" element={<About />}/>
         </Routes>
       </Box>
     </Box>

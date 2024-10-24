@@ -19,7 +19,7 @@ const LandingPage = () => {
         </div>
         <ul className="nav-links">
           <li><a href="#">Home</a></li>
-          <li><a href="#">About us</a></li>
+          <li><a href="/about">About us</a></li>
           <li><a href="#">Contact us</a></li>
         </ul>
         <div className="auth-buttons">

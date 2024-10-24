@@ -46,7 +46,7 @@ const Navbar = ({ handleDrawerToggle }) => {
                     {/* Notification Icon */}
                     <Box
                         sx={{
-                            backgroundColor: 'rgb(245,245,245,0.9)',
+                            backgroundColor: 'black',
                             borderRadius: '4px',
                             display: 'flex',
                             alignItems: 'center',
@@ -61,7 +61,7 @@ const Navbar = ({ handleDrawerToggle }) => {
                     {/* Help Icon */}
                     <Box
                         sx={{
-                            backgroundColor: 'rgb(245,245,245,0.9)',
+                            backgroundColor: 'black',
                             borderRadius: '4px',
                             display: 'flex',
                             alignItems: 'center',
