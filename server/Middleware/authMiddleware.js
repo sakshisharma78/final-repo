@@ -8,7 +8,7 @@ const protect = async (req, res, next) => {
     console.log("Headers:", req.headers); // Log all headers
 
     // Try to fetch the token from headers
-    token = req.headers['authorization']; // Change to 'authorization' if needed
+    token = req.headers['auth-token']; // Check if this is correct
 
     if (!token) {
         console.log("Token not found in headers");
