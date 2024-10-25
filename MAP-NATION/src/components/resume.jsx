@@ -107,8 +107,8 @@ const Roadmaps = () => {
 
                       <h4>Resources:</h4>
                       <div className="button-row">
-                        {detail.resources && detail.resources.length > 0 ? (
-                          detail.resources.map((resource, resourceIndex) => (
+                        {detail.topics && detail.topics.length > 0 ? (
+                          detail.topics.map((resource, resourceIndex) => (
                             <Button
                               key={resourceIndex}
                               className="button2"
@@ -132,7 +132,7 @@ const Roadmaps = () => {
                       </div>
 
                       <h4>Task:</h4>
-                      <p>{detail.task_format || 'No task available'}</p>
+                      <p>{detail.topics || 'No task available'}</p>
 
                       <Button
                         className="button1"

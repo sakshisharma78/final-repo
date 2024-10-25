@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const User = require('../Models/user'); // Adjust the path to your User model
+require('dotenv').config(); // Load environment variables
 
 const protect = async (req, res, next) => {
     let token;
@@ -8,7 +9,7 @@ const protect = async (req, res, next) => {
     console.log("Headers:", req.headers); // Log all headers
 
     // Try to fetch the token from headers
-    token = req.headers['auth-token']; // Check if this is correct
+    token = req.headers['auth-token']; // Ensure your client sends the token in this header
 
     if (!token) {
         console.log("Token not found in headers");
@@ -16,8 +17,8 @@ const protect = async (req, res, next) => {
     }
 
     try {
-        // Verify token
-        const decoded = jwt.verify(token, "sakshisharma123");
+        // Verify token using JWT_SECRET from the environment variables
+        const decoded = jwt.verify(token, process.env.JWT_SECRET); 
         console.log("Decoded token:", decoded);
 
         // Fetch user

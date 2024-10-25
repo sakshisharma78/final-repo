@@ -12,7 +12,7 @@ const profileRoutes = require('./Routes/profileRoutes.js');
 const chatbotRoutes = require('./Routes/chatRoutes.js');
 const roadmapRoutes = require('./Routes/roadmapRoutes.js');
 const progressRoutes = require('./Routes/progressRoutes.js');
-// const {  errorHandler, notFound } = require('./Middleware/authMiddleware'); // Import error handling middleware
+// const { errorHandler, notFound } = require('./Middleware/authMiddleware'); // Import error handling middleware
 const protect = require('./Middleware/authMiddleware');
 
 dotenv.config(); // Load environment variables from .env file
@@ -20,12 +20,14 @@ dotenv.config(); // Load environment variables from .env file
 // Initialize express app
 const app = express();
 
-// Body parser middleware
+// Body parser middleware (optional since express.json() is already used)
 app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB
 connectDB();
+
+// Serve static uploads folder
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Define routes
@@ -36,11 +38,10 @@ app.use('/api/roadmaps', roadmapRoutes);
 app.use('/api/progress', progressRoutes);
 app.use('/api/chatbot', chatbotRoutes);
 
-
-
-
 // Error Handling Middleware
-// // Handle other errors
+// Uncomment this section if you have error handling functions
+// app.use(notFound); // Handle 404 errors
+// app.use(errorHandler); // Handle other errors
 
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {
