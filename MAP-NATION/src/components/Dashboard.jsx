@@ -48,7 +48,7 @@ const Dashboard = () => {
     return;
    }
 
-   const response = await fetch('http://localhost:5000/api/roadmaps/roadmaps');
+   const response = await fetch('https://map-nation.onrender.com/api/roadmaps/roadmaps');
    const data = await response.json();
    setRoadmaps(data);
   };

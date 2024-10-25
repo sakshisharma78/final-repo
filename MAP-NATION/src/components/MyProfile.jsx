@@ -33,7 +33,7 @@ const MyProfile = () => {
           return;
           }
         
-          const response = await fetch('http://localhost:5000/api/profile/me', {
+          const response = await fetch('https://map-nation.onrender.com/api/profile/me', {
           method: 'GET',
           headers: {
            'auth-token': token,

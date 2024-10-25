@@ -26,7 +26,7 @@ try {
  }
 
  setLoading(true); // Show loader
- const response = await axios.post("http://localhost:5000/api/roadmaps/generate-roadmap", {
+ const response = await axios.post("https://map-nation.onrender.com/api/roadmaps/generate-roadmap", {
  userId: "your-user-id", // Replace with the actual user ID from authentication
  languageName,
  days,

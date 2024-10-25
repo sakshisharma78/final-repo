@@ -28,7 +28,7 @@ function EditProfile() {
      return;
     }
 
-    const res = await fetch('http://localhost:5000/api/profile/me', {
+    const res = await fetch('https://map-nation.onrender.com/api/profile/me', {
      method: 'GET',
      headers: {
       Authorization: `Bearer ${token}`,

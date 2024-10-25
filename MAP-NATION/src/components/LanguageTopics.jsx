@@ -22,7 +22,7 @@ function LanguageTopics({ fullData }) {
       setError(null); // Clear any previous errors
 
       // Make the API request
-      const response = await axios.post("http://localhost:5000/api/generate-ppt", { topic });
+      const response = await axios.post("https://map-nation.onrender.com/api/generate-ppt", { topic });
       setPptLinks(prev => ({ ...prev, [dayIndex]: response.data.link })); // Set link for specific day
 
     } catch (error) {

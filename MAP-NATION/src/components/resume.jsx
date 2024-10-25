@@ -19,7 +19,7 @@ const Roadmaps = () => {
     const fetchRoadmap = async () => {
       try {
         console.log('Fetching roadmap...');
-        const response = await fetch(`http://localhost:5000/api/roadmaps/${id}`);
+        const response = await fetch(`https://map-nation.onrender.com/api/roadmaps/${id}`);
 
         // Check if response is ok
         if (!response.ok) {
