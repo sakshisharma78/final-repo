@@ -24,7 +24,7 @@ body {
 /* Top section with background image */
 .about-header {
     height: 60vh;
-    background-image: url('/about-us.avif'); /* Add your background image path */
+    background-image: url('/aboutus.avif'); /* Add your background image path */
     background-size: cover;
     background-position: center;
     display: flex;

@@ -8,7 +8,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('bg ka bhi bg.jpg'); /* Your background image here */
+    background-image: url('bgkabhibg.jpg'); /* Your background image here */
     padding: 5px;
 }
 
@@ -27,7 +27,7 @@
 /* Signup Image Styling */
 .signup-image {
     flex: 1;
-    background-image: url('background 3.jpg');
+    background-image: url('background3.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
