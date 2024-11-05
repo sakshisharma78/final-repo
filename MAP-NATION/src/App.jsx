@@ -15,9 +15,7 @@ import Landing from './components/Landing';
 import Login from './components/Login';
 import Register from './components/SignUp';
 import Resume from './components/resume';
-import About from '<div className="" />
-<components />
-<A></A>bout';
+import About from './components/About';
 
 const AppContent = () => {
   const location = useLocation();
