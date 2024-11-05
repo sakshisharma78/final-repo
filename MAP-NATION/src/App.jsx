@@ -56,7 +56,7 @@ const AppContent = () => {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/resume/:id" element={<Resume />} />
-          <Route path="/about" element={<About />}/>
+          <Route path="/about" element={<About />} />
         </Routes>
       </Box>
     </Box>
